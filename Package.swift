@@ -6,6 +6,7 @@ let package = Package(
     platforms: [.iOS(.v12)],
     products: [
         .library(name: "Parchment", targets: ["Parchment"]),
+        .library(name: "Parchment-Dynamic", type: .dynamic, targets: ["Parchment"]),
     ],
     targets: [
         .target(
